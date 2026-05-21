@@ -15,3 +15,9 @@ graph TD
 
     API -->|Auth| AuthProvider[Identity/JWT]
 ```
+
+### Starting the Postgres Database
+
+- Create a `.env` file and place it in the root of the project. Populate this file with values for `POSTGRES_DB`, `POSTGRES_USER`, and `POSTGRES_PASSWORD`.
+
+- In the root of the project, run `docker compose up -d`. The container should now be running and a volume created.
